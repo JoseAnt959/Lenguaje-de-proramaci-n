@@ -1,0 +1,23 @@
+// Realizado por Jose Antonio Pluma Rodriguez // 28/09/2020
+#include <stdio.h>
+int main () {
+float Vf, Rrojo, Rverde, Ramarillo;
+float Vrojo = 1.5;
+float Vverde = 1.8;
+float Vamarillo = 1.8;
+float VRrojo;
+float VRverde;
+float VRamarillo;
+printf("Ingresa el valor de la fuente de voltaje: ");
+scanf("%f",&Vf);
+VRrojo=Vf-Vrojo;
+VRverde=Vf-Vverde;
+VRamarillo=Vf-Vamarillo;
+Rrojo = VRrojo/0.015;
+Rverde = VRverde/0.015;
+Ramarillo = VRamarillo/0.015;
+printf("El valor de la resistencia para el led rojo es de: %f \n", Rrojo);
+printf("El valor de la resistencia para el led verde es de: %f \n", Rverde);
+printf("El valor de la resistencia para el led amarillo es de: %f \n", Ramarillo);
+return 0;
+}
