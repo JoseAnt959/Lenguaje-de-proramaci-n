@@ -1,0 +1,29 @@
+// Realizado por Jose Antonio Pluma Rodriguez // 28/09/2020
+#include <stdio.h>
+int main (){
+float Vf;
+int R1, R2, R3;
+float I1, I2, I3;
+
+printf("Ingresa el valor de la fuente de voltaje: ");
+scanf("%f",&Vf);
+
+printf("No ingresar el valor de la resistencia con prefijos\n");
+printf("Resistencia 1; ");
+scanf("%d",&R1);
+
+printf("Resistencia 2: ");
+scanf("%d", &R2);
+
+printf("Resistencia 3: ");
+scanf("%d", &R3);
+I1= Vf/R1;
+I2= Vf/R2;
+I3= Vf/R3;
+printf("La corriente en la resistencia 1 es %0.3fA\n",I1);
+printf("La corriente en la resistencia 2 es %0.3fA\n",I2);
+printf("La corriente en la resistencia 3 es %0.3fA\n",I3);
+printf("El voltaje en la resistencia 1 es %0.3fV\n", Vf);
+printf("El voltaje en la resistencia 2 es %0.3fV\n", Vf);
+printf("El voltaje en la resistencia 3 es %0.3fV\n", Vf);
+}
