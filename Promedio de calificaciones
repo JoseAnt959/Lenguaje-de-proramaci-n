@@ -1,0 +1,152 @@
+//Realizado por Jose Antonio Pluma Rodriguez, el 04/10/2020
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int C1,C2,C3,C4,C5,cp;
+    char calif1, calif2, calif3, calif4, calif5;
+
+    printf("Ingresa la primera calificacion!\n");
+    scanf("%c",&calif1);
+    printf("Ingresa la segunda calificacion!\n");
+    fflush( stdin );
+    scanf("%c",&calif2);
+    printf("Ingresa la tercera calificacion!\n");
+    fflush( stdin );
+    scanf("%c",&calif3);
+    printf("Ingresa la cuarta calificacion!\n");
+    fflush( stdin );
+    scanf("%ca",&calif4);
+    printf("Ingresa la quinta calificacion!\n");
+    fflush( stdin );
+    scanf("%c",&calif5);
+
+    if (calif1 == 'A'|| calif1 == 'a' )
+    {
+      C1 = 10;
+    }
+    else if (calif1 == 'B'|| calif1 == 'b')
+    {
+     C1 = 9;
+    }
+    else if (calif1 == 'C'|| calif1 == 'c')
+    {
+      C1 = 8;
+    }
+    else if (calif1 == 'D'|| calif1 == 'd')
+    {
+      C1 = 7;
+    }
+    else if (calif1 == 'E'|| calif1 == 'e')
+    {
+      C1 = 6;
+    }
+    else if (calif1 == 'F'|| calif1 == 'f')
+    {
+      C1 = 5;
+    }
+
+    if (calif2 == 'A'|| calif2 == 'a' )
+    {
+      C2 = 10;
+    }
+    else if (calif2 == 'B'||calif2 == 'b')
+    {
+      C2 = 9;
+    }
+    else if (calif2 == 'C'|| calif2 == 'c')
+    {
+      C2 = 8;
+    }
+    else if (calif2 == 'D'||calif2 == 'd')
+    {
+      C2 = 7;
+    }
+    else if (calif2 == 'E'||calif2 == 'e')
+    {
+      C2 = 6;
+    }
+    else if (calif2 == 'F'||calif2 == 'f')
+    {
+      C2 = 5;
+    }
+
+    if (calif3 == 'A'|| calif3 == 'a' )
+    {
+      C3 = 10;
+    }
+    else if (calif3 == 'B'||calif3 == 'b')
+    {
+     C3 = 9;
+    }
+    else if (calif3 == 'C'|| calif3 == 'c')
+    {
+      C3 = 8;
+    }
+    else if (calif3 == 'D'||calif3 == 'd')
+    {
+      C3 = 7;
+    }
+    else if (calif3 == 'E'||calif3 == 'e')
+    {
+      C3 = 6;
+    }
+    else if (calif3 == 'F'||calif3 == 'f')
+    {
+      C3 = 5;
+    }
+
+    if (calif4 == 'A'|| calif4 == 'a' )
+    {
+      C4 = 10;
+    }
+    else if (calif4 == 'B'||calif4 == 'b')
+    {
+     C4 = 9;
+    }
+    else if (calif4 == 'C'|| calif4 == 'c')
+    {
+      C4 = 8;
+    }
+    else if (calif4 == 'D'||calif4 == 'd')
+    {
+      C4 = 7;
+    }
+    else if (calif4 == 'E'||calif4 == 'e')
+    {
+      C4 = 6;
+    }
+    else if (calif4 == 'F'||calif4 == 'f')
+    {
+      C4 = 5;
+    }
+
+    if (calif5 == 'A'|| calif5 == 'a' )
+    {
+      C5 =10;
+    }
+    else if (calif5 == 'B'||calif5 == 'b')
+    {
+     C5 = 9;
+    }
+    else if (calif5 == 'C'|| calif5 == 'c')
+    {
+      C5 =8;
+    }
+    else if (calif5 == 'D'||calif5 == 'd')
+    {
+      C5 = 7;
+    }
+    else if (calif5 == 'E'||calif5 == 'e')
+    {
+      C5 = 6;
+    }
+    else if (calif5 == 'F'||calif5 == 'f')
+    {
+      C5 = 5;
+    }
+    cp = (C1+C2+C3+C4+C5)/5 ;
+    printf("El promedio es: %d " ,cp );
+    return 0;
+ }
