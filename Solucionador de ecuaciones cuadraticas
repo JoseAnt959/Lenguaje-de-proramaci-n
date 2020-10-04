@@ -1,0 +1,21 @@
+//Realizado por Jose Antonio Pluma Rodriguez, el 04/10/2020
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    double x1,x2,a,b,c;
+   printf("Ingresa la primera variable \n");
+    scanf("%lf",&a);
+    printf("Ingresa la segunda variable \n");
+    fflush( stdin );
+    scanf("%lf",&b);
+    printf("Ingresa la tercera variable \n");
+    fflush( stdin );
+    scanf("%lf",&c);
+     x1=((-b+sqrt(pow(b, 2)- (4*a*c)))/(2*a));
+     x2=((-b-sqrt(pow(b, 2)- (4*a*c)))/(2*a));
+printf("El valor de x1 es: %lf \n", x1 );
+printf("El valor de x2 es: %lf \n", x2);
+    return 0;
+}
