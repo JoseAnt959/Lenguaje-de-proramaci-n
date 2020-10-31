@@ -1,0 +1,45 @@
+#include <stdio.h>
+int main(void)
+{
+    unsigned int aCount;
+    unsigned int bCount;
+    unsigned int cCount;
+    unsigned int dCount;
+    unsigned int fCount;
+    puts("Ingresa las calificaciones en letras\n");
+    puts("Ingresa el caracter EOF para finalizar la entrada!\n");
+    int grade;
+    while ((grade=getchar()) != EOF) {
+    switch(grade){
+    case 'A':
+    case 'a': ++aCount;
+    break;
+    case 'B':
+    case 'b':++bCount;
+    break;
+    case 'C':
+    case 'c':++bCount;
+    break;
+    case 'D':
+    case 'd':++bCount;
+    break;
+    case 'F':
+    case 'f':++bCount;
+    break;
+    case ' \n':
+    case ' \t':
+    case ' ':++bCount;
+    break;
+    default:
+    printf("%s","Se ingresó una calificación de letra incorrecta.\n");
+    puts("Ingrese una nueva calificación.");
+    break;
+}
+}
+printf("\n Los totales para cada calificación de letra son:");
+printf("A: %u\n" ,aCount);
+printf("B: %u\n" ,bCount);
+printf("C: %u\n" ,cCount);
+printf("D: %u\n" ,dCount);
+printf("F: %u\n" ,fCount);
+}
