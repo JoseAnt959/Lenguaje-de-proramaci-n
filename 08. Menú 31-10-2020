@@ -1,0 +1,171 @@
+//Realizado por Jose Antonio Pluma Rodriguez, 31/10/2020
+#include<stdio.h>
+#include<stdlib.h>
+int main ()
+{
+    int sel;
+    char opc;
+    printf("-----------------¿Listo para iniciar el programa? (Si/No):---------------\n ");
+    scanf ("%s",&opc);
+    while (opc=='s'|| opc== 'S')
+    {
+    printf ("*********************************************************\n");
+    printf("Selecciona la opcion para el programa que quieres realizar:\n1.- Visualizar figuras\n2.- Calcular el valor de Pi\n3.-Serie de numeros.\n");
+    scanf("%d",&sel);
+     system("cls");
+    while (sel==1)
+    {
+    int r, e, a;
+    int na=1;
+    int ne=4;
+    int ia=2;
+    int ie=-1;
+    printf ("A)\n");
+    for (r=1;r<=10;r++)
+    {
+        for (a=1;a<=r;a++)
+        {
+            printf ("*");
+        }
+        printf ("\n");
+    }
+    printf ("B)\n");
+    for (r=1;r<=10;r++)
+    {
+        for (a=r;a<=10;a++)
+        {
+            printf ("*");
+        }
+        printf ("\n");
+    }
+    printf ("C)\n");
+    for (r=1;r<=10;r++)
+    {
+        for (e=2;e<=r;e++)
+        {
+            printf (" ");
+        }
+        for (a=10;a>=r;a--)
+        {
+            printf ("*");
+        }
+        printf ("\n");
+    }
+    printf ("D)\n");
+    for (r=1;r<=10;r++)
+    {
+        for (e=9;e>=r;e--)
+        {
+            printf(" ");
+        }
+        for (a=1;a<=r;a++)
+        {
+            printf("*");
+        }
+        printf ("\n");
+    }
+    printf ("Diamante\n");
+    for (int r=1;r<=9;r++)
+    {
+        for (int e=1;e<=ne;e++)
+        {
+            printf (" ");
+        }
+        for (int a=1;a<=na;a++)
+        {
+            printf ("*");
+        }
+        printf ("\n");
+        if (r==5)
+        {
+            ia=-2;
+            ie=1;
+        }
+        ne=ne+ie;
+        na=na+ia;
+    }
+    printf ("\n¿Quieres volver almenu principal? (Si/No):\n");
+    scanf ("%s",&opc);
+    system("cls");
+    }
+    while (sel==2)
+    {
+        int i,v , j = 1;
+        double pi = 0, spi;
+        printf("Ingresa el número de valores: ");
+        scanf("%d",&v);
+        for (i=0;i<v;i++)
+        {
+          spi=4/(double)j;
+               if (i % 2 == 1)
+               {
+                  pi-=spi;
+               }
+               else
+               {
+                   pi+=spi;
+               }
+          j += 2;
+        }
+    printf("El valor de Pi es: %.16f", pi);
+    printf ("\n¿Quieres volver al menu principal? (Si/No):\n");
+    scanf ("%s",&opc);
+    system("cls");
+    }
+    while (sel==3)
+    {
+        int v, p, s, t, c;
+        printf ("Dime el numero de veces que voy a imprimir las series\n");
+        scanf ("%d",&v);
+        p=1;
+        s=1;
+        t=1;
+        c=1;
+    printf ("\nPrimera serie:\n");
+    while (p<=v)
+    {
+        int n=-1;
+        for (p=1;p<=v;p++)
+        {
+            n=n+2;
+            printf ("%d, ",n);
+        }
+    }
+    printf ("\nSegunda serie:\n");
+    while (s<=v)
+    {
+        int n=0;
+        for (s=1;s<=v;s++)
+        {
+            n=n+3;
+            printf ("%d, ",n);
+        }
+    }
+    printf ("\nTercera serie:\n");
+    while (t<=v)
+    {
+        int n=40;
+        for (t=1;t<=v;t++)
+        {
+            n=n-10;
+            printf ("%d, ",n);
+        }
+    }
+    printf ("\nCuarta Serie:\n");
+    while (c<=v)
+    {
+        int n=7;
+        for (c=1;c<=v;c++)
+        {
+            n=n+8;
+            printf ("%d, ",n);
+        }
+    }
+    printf ("\n¿Quieres volver al menu principal? (Si/No):\n");
+    scanf ("%s",&opc);
+    system("cls");
+    }
+    }
+    printf ("\t Hasta pronto");
+    return 0;
+}
